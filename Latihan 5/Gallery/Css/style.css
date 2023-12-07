@@ -1,0 +1,108 @@
+/* font */
+
+@font-face {
+    src: url();
+}
+
+/* style utama */
+body {
+    font: 18px/36px ;
+    background-image:url(../img/full/ojek.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: brown;
+
+
+}
+
+
+h1 {
+       font-size: 80px ;
+       margin: 50px 0 ;
+       text-align: center ;
+       text-shadow: 1px 1px 2px white ;
+
+}
+
+.container {
+    background-image: url(../img/full/backround1.webp);
+     width: 600px;
+     height: 150px;
+     background-color: rgb(255, 0, 0);
+     margin: auto;
+     padding: 25px;
+     box-shadow:  0 0 3px 3px  rgba( 0, 0, 0, 3); 
+     border-radius: 5px ;
+}
+
+.Gallery li {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 5px solid teal;
+    float: left;
+    margin: 10px ;
+    position: relative;
+    border-radius: 50%;
+}
+
+.Gallery li img {
+    border-radius: 50%;
+}
+
+.Gallery li span {
+   display: block;
+   width: 120px;
+   height: 120px;
+   background-color: rgba (200, 200, 200, 5);
+   position: absolute;
+   top: 0;
+   text-align: center;
+   line-height: 120px;
+   color: #444;
+   text-shadow: 1px 1px 1px #ddd;
+   opacity: 0;
+   transform : scale (0) rotate (0);
+   background-color: red;
+}
+
+.Gallery li a:hover span{
+  opacity: 1;
+  transform:  scale(1) rotate(360deg);
+}
+ 
+.clear{
+    clear: both;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0 ;
+    overflow: hidden;
+    position: fixed;
+    top: 0 ;
+    left: 0 ;
+    background-color: rgba( 0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+}
+
+.overlay :target img {
+    animation: zoomDanFade 1s;
+}
+
+.overlay img {
+   max-height: 100%;
+   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0,5)
+}

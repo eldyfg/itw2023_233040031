@@ -1,0 +1,44 @@
+body {
+    background-color: aqua;
+    font-family: georgia;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 60px;
+    color: darkblue;
+}
+
+h4 {
+    text-align: right;
+}
+
+
+.pada{
+    text-align: center;
+    color: orange;
+}
+
+.boss{
+    text-align: center;
+}
+
+.a-navbar {
+    color: white;
+}
+
+.a-navbar:hover {
+    color: red;
+}
+
+.fb {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.fb:hover {
+    color: white;
+    background-color: blue;
+}
